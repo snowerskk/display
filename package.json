@@ -2,7 +2,7 @@
   "name": "display",
   "private": true,
   "scripts": {
-    "build": "slidev build --base=/display",
+    "build": "slidev build --base=/display && node createFile",
     "dev": "slidev",
     "export": "slidev export"
   },
