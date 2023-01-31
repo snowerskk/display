@@ -25,7 +25,7 @@ transition: fade-out
 css: unocss
 ---
 
-# shuzhibaogao test 10
+# shuzhibaogao test 14
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
