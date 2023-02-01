@@ -15,6 +15,6 @@ const props = defineProps({
   font-size: 2.25rem;
   line-height: 2.5rem;
   text-align: center;
-  color: black;
+  color: #5d8392;
 }
 </style>

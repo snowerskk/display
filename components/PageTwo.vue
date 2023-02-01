@@ -27,14 +27,6 @@ const modules = ref(['指标管理','报销管理','借款管理','项目库','�
   background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
 }
-.title {
-  margin-bottom: 1rem;
-  margin-left: -0.05em;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  text-align: center;
-  color: black;
-}
 .content {
   color: #000;
 }
