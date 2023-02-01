@@ -16,7 +16,7 @@ const props = defineProps({
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  border: 1px solid powderblue;
+  border: 1px solid palevioletred;
   padding: 1px;
 }
 </style>

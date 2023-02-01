@@ -26,4 +26,10 @@ const props = defineProps({
   right: 10px;
   bottom: 10px;
 }
+
+</style>
+<style>
+.slot {
+  color: #000;
+}
 </style>

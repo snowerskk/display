@@ -73,8 +73,8 @@ image: 'bg.jpg'
 transition: slide-up
 ---
 # 代码提交次数
-|                                                    |     |                    |
-| -------------------------------------------------- | --- | ------------------ |
+|         |          |
+| ------- |--------- |
 | 1.3版本 | 277次 |
 | 1.5版本 | 1369次 |
 
@@ -103,39 +103,78 @@ pie title 占比
 | 借款管理 | 1972 | 62.92% |
 | 总的情况 | 13478 | 55.29% |
 ---
+layout: image
+image: '/huawen.jpg'
 ---
-# 代码优化的好处
-### 1.减少代码量，减少项目体积，提高运行效率
-### 2.代码结构更清楚，逻辑更清晰，方便后期维护
-### 3.减少bug数量以及出现bug的几率，更稳定
+<Page title="代码优化所带来的好处">
+<template #default>
+<div class="slot">
+<h3>1.减少代码量，减少项目体积，提高运行效率</h3>
+<h3>2.代码结构更清楚，逻辑更清晰，方便后期维护</h3>
+<h3>3.减少bug数量以及出现bug的几率，更稳定</h3>
+</div>
+</template>
+</Page>
 ---
+layout: image
+image: '/huawen.jpg'
 ---
-# 代码得到优化得益于以下2点
-### 1.重构
-### 2.需求相对稳定了下来
+<Page title="代码得到优化得益于以下2点">
+<template #default>
+<div class="slot">
+<h3>1.重构</h3>
+<h3>2.需求相对稳定了下来</h3>
+</div>
+</template>
+</Page>
 ---
+layout: image
+image: '/huawen.jpg'
 ---
-# 重构所做的主要内容
-### 1.vue3取代vue2：diff算法优化-更快，更好的ts支持-更稳，Compostion API-更清晰，Tree-shaking-更轻
-### 2.对业务逻辑进行梳理，重新安排代码结构：结构清晰，减少重复代码
-### 3.进一步组件化
-### 4.进一步函数化
+<Page title="重构所做的主要内容">
+<template #default>
+<div class="slot">
+<h3>1.vue3取代vue2：diff算法优化-更快，更好的ts支持-更稳，Compostion API-更清晰，Tree-shaking-更轻</h3>
+<h3>2.对业务逻辑进行梳理，重新安排代码结构：结构清晰，减少重复代码</h3>
+<h3>3.进一步组件化</h3>
+<h3>4.进一步函数化</h3>
+</div>
+</template>
+</Page>
 ---
+layout: image
+image: '/huawen.jpg'
 ---
-# 关于组件化
-### 抽取模块组件26个
-### 参与开发全局组件5个
+<Page title="关于组件化">
+<template #default>
+<div class="slot">
+<h3>抽取模块组件26个</h3>
+<h3>参与开发全局组件5个</h3>
+</div>
+</template>
+</Page>
 ---
+layout: image
+image: '/huawen.jpg'
 ---
-# 关于函数化
-### 抽象模块方法40个
-### 参与开发全局方法6个
+<Page title="关于函数化">
+<template #default>
+<div class="slot">
+<h3>抽象模块方法40个</h3>
+<h3>参与开发全局方法6个</h3>
+</div>
+</template>
+</Page>
 ---
+layout: image
+image: '/huawen.jpg'
 ---
 <Page title="一点问题及建议">
 <template #default>
+<div class="slot">
 稳定、明确的需求对代码的整体质量有明显重要的影响，建议开发过程流程化，以原型为核心和驱动，原型-设计-开发-测试-产品
 降低沟通成本，减少需求扯皮的情况
 对设计，可以整体把控产品的样式和美观，对开发有明显的清晰的需求参照，对测试有清晰的测试参照
+</div>
 </template>
 </Page>
