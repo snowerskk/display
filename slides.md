@@ -25,11 +25,12 @@ transition: fade-out
 css: unocss
 ---
 
-# shuzhibaogao test 16
+# 述 职 报 告
+It is the unforeseen that always happens.
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    chen long <carbon:arrow-right class="inline"/>
+    陈 龙 <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
@@ -38,9 +39,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: slide-left
+layout: image
+image: 'bg.jpg'
 ---
-
+<PageOne title="2022工作内容" />
 <!--
 You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/guide/syntax#embedded-styles
@@ -57,324 +59,80 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-
-<!--
-Here is another comment.
--->
-
+---
+layout: image
+image: 'bg.jpg'
+---
+<PageTwo title="主要涉及模块" />
+---
+layout: image
+image: 'bg.jpg'
+---
+<PageThree title="主要涉及表单" />
 ---
 transition: slide-up
 ---
+# 代码提交次数
+|                                                    |     |                    |
+| -------------------------------------------------- | --- | ------------------ |
+| 1.3版本 | 277次 |
+| 1.5版本 | 1369次 |
 
-# Navigation
+<div v-click="1">
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+<br />
 
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+```mermaid
+pie title 占比
+"1.3版本" : 277
+"1.5版本" : 1369
 ```
-
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
 </div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
 ---
-class: px-20
 ---
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
+# 代码行数
+<img src="/code1.png" style="height: 100%;" />
 ---
-theme: default
 ---
-```
-
-```yaml
+# 代码优化情况
+排除了低代码配置的影响
+| 模块 | 优化量（行） |  优化率（%） |
+| ------- | --- | ------- |
+| 指标管理 | 2617 | 36.98% |
+| 报销管理 | 8889 | 62.75% |
+| 借款管理 | 1972 | 62.92% |
+| 总的情况 | 13478 | 55.29% |
 ---
-theme: seriph
 ---
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
+# 代码优化的好处
+### 1.减少代码量，减少项目体积，提高运行效率
+### 2.代码结构更清楚，逻辑更清晰，方便后期维护
+### 3.减少bug数量以及出现bug的几率，更稳定
 ---
-preload: false
 ---
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
+# 代码得到优化得益于以下2点
+### 1.重构
+### 2.需求相对稳定了下来
 ---
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
 ---
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
+# 重构所做的主要内容
+### 1.vue3取代vue2：diff算法优化-更快，更好的ts支持-更稳，Compostion API-更清晰，Tree-shaking-更轻
+### 2.对业务逻辑进行梳理，重新安排代码结构：结构清晰，减少重复代码
+### 3.进一步组件化
+### 4.进一步函数化
 ---
-src: ./pages/multiple-entries.md
-hide: false
 ---
-
+# 关于组件化
+### 抽取模块组件26个
+### 参与开发全局组件5个
 ---
-layout: center
-class: text-center
 ---
-
-# Learn More
-
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+# 关于函数化
+### 抽象模块方法40个
+### 参与开发全局方法6个
+---
+---
+# 一点问题及建议
+稳定、明确的需求对代码的整体质量有明显重要的影响，建议开发过程流程化，以原型为核心和驱动，原型-设计-开发-测试-产品
+降低沟通成本，减少需求扯皮的情况
+对设计，可以整体把控产品的样式和美观，对开发有明显的清晰的需求参照，对测试有清晰的测试参照
