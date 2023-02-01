@@ -104,7 +104,7 @@ pie title 占比
 | 总的情况 | 13478 | 55.29% |
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="代码优化所带来的好处">
 <template #default>
@@ -117,7 +117,7 @@ image: '/huawen.jpg'
 </Page>
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="代码得到优化得益于以下2点">
 <template #default>
@@ -129,7 +129,7 @@ image: '/huawen.jpg'
 </Page>
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="重构所做的主要内容">
 <template #default>
@@ -143,7 +143,7 @@ image: '/huawen.jpg'
 </Page>
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="关于组件化">
 <template #default>
@@ -155,7 +155,7 @@ image: '/huawen.jpg'
 </Page>
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="关于函数化">
 <template #default>
@@ -167,7 +167,7 @@ image: '/huawen.jpg'
 </Page>
 ---
 layout: image
-image: '/huawen.jpg'
+image: 'huawen.jpg'
 ---
 <Page title="一点问题及建议">
 <template #default>

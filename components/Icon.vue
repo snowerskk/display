@@ -6,7 +6,7 @@
 const props = defineProps({
   path: {
     type: String,
-    default: '/icon.png'
+    default: 'icon.png'
   }
 })
 </script>
