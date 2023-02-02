@@ -188,8 +188,8 @@ image: 'huawen.jpg'
 <template #default>
 <div>参与开发全局公用组件5个</div>
 <div>
-组件库：<img src="ultra.png" style="width: 160px; height: 24px;" />
-例：<img src="ultraexample.png" />
+组件库：<img src="/ultra.png" style="width: 160px; height: 24px;" />
+例：<img src="/ultraexample.png" />
 </div>
 </template>
 </Card>
@@ -221,8 +221,8 @@ image: 'huawen.jpg'
 <template #default>
 <div>参与开发全局公用方法6个</div>
 <div>
-工具库：<img src="catkit.png" style="width: 80px; height: 30px;" />
-例：<img src="catexample.png" />
+工具库：<img src="/catkit.png" style="width: 80px; height: 30px;" />
+例：<img src="/catexample.png" />
 </div>
 </template>
 </Card>
