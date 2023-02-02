@@ -55,6 +55,7 @@ const modules = ref([
 .page {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
+  padding: 10px;
 }
 .content {
   color: #000;
@@ -71,7 +72,11 @@ const modules = ref([
 .item {
   flex-grow: 1;
   width: 20%;
-  background: snow;
-  border-bottom: 1px dashed #eee;
+  border: 1px solid rgb(177, 181, 247);
+  background: rgb(239, 240, 253);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
 }
 </style>

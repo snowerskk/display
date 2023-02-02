@@ -32,4 +32,8 @@ const props = defineProps({
 .slot {
   color: #000;
 }
+.cflex {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>

@@ -73,6 +73,7 @@ image: 'bg.jpg'
 transition: slide-up
 ---
 # 代码提交次数
+期间: 2022/01/01 - 2022/12/31
 |         |          |
 | ------- |--------- |
 | 1.3版本 | 277次 |
@@ -90,12 +91,14 @@ pie title 占比
 </div>
 ---
 ---
-# 代码行数
-<img src="/code1.png" style="height: 100%;" />
+# 代码量（几个版本之间的代码行数比对）
+<img src="/code1.png" style="height: 95%;" />
+
 ---
 ---
-# 代码优化情况
-排除了低代码配置的影响
+# 代码优化情况（排除了低代码配置的影响）
+代码量的急剧减少是因为进行了大量的代码优化
+
 | 模块 | 优化量（行） |  优化率（%） |
 | ------- | --- | ------- |
 | 指标管理 | 2617 | 36.98% |
@@ -106,12 +109,12 @@ pie title 占比
 layout: image
 image: 'huawen.jpg'
 ---
-<Page title="代码优化所带来的好处">
+<Page title="优化代码所带来的好处">
 <template #default>
 <div class="slot">
-<h3>1.减少代码量，减少项目体积，提高运行效率</h3>
-<h3>2.代码结构更清楚，逻辑更清晰，方便后期维护</h3>
-<h3>3.减少bug数量以及出现bug的几率，更稳定</h3>
+<Item v-click="1" text="1.减少代码量，减少项目体积，提高运行效率" />
+<Item v-click="2" text="2.代码结构更清楚，逻辑更清晰，方便后期维护" />
+<Item v-click="3" text="3.减少bug数量以及出现bug的几率，更稳定" />
 </div>
 </template>
 </Page>
@@ -122,8 +125,8 @@ image: 'huawen.jpg'
 <Page title="代码得到优化得益于以下2点">
 <template #default>
 <div class="slot">
-<h3>1.重构</h3>
-<h3>2.需求相对稳定了下来</h3>
+<Item v-click="1" text="1.整体重构" />
+<Item v-click="2" text="2.需求明确且稳定" />
 </div>
 </template>
 </Page>
@@ -133,11 +136,30 @@ image: 'huawen.jpg'
 ---
 <Page title="重构所做的主要内容">
 <template #default>
-<div class="slot">
-<h3>1.vue3取代vue2：diff算法优化-更快，更好的ts支持-更稳，Compostion API-更清晰，Tree-shaking-更轻</h3>
-<h3>2.对业务逻辑进行梳理，重新安排代码结构：结构清晰，减少重复代码</h3>
-<h3>3.进一步组件化</h3>
-<h3>4.进一步函数化</h3>
+<div class="slot cflex">
+<Card v-click="1" title="vue3取代vue2">
+<template #default>
+<div>diff算法优化-更快</div>
+<div>更好的ts支持-更稳</div>
+<div>Compostion API-更清晰</div>
+<div>Tree-shaking-更轻</div>
+</template>
+</Card>
+<Card v-click="2" title="重新设计代码结构">
+<template #default>
+<div>重新梳理业务逻辑，去除旧版本具有不确定性的历史代码，将业务逻辑点重新整合，使代码逻辑更清晰简洁，使代码运行更加健壮稳定</div>
+</template>
+</Card>
+<Card v-click="3" title="进一步组件化">
+<template #default>
+<div>建立在重新设计代码结构的基础上，将业务代码分离成更小的逻辑单元，将相似、相近的逻辑单元抽离成公用的组件，进一步增加代码的可复用性、可扩展性和可维护性</div>
+</template>
+</Card>
+<Card v-click="4" title="进一步函数化">
+<template #default>
+<div>同样建立在重新设计代码结构的基础上，将交互逻辑重新抽象，封装成公用的方法，减少代码量降低耦合度的同时，丰富了工具库</div>
+</template>
+</Card>
 </div>
 </template>
 </Page>
@@ -147,9 +169,30 @@ image: 'huawen.jpg'
 ---
 <Page title="关于组件化">
 <template #default>
-<div class="slot">
-<h3>抽取模块组件26个</h3>
-<h3>参与开发全局组件5个</h3>
+<div class="slot cflex">
+<Card v-click="1" title="模块公用组件">
+<template #default>
+<div>封装模块级公用组件26个</div>
+<div>
+<span>例：</span>
+<Tag text="quota-select" />
+<Tag text="settlement" />
+<Tag text="type-dialog" />
+<Tag text="steps" />
+<Tag text="del-btn" />
+<span>...</span>
+</div>
+</template>
+</Card>
+<Card v-click="2" title="全局公用组件">
+<template #default>
+<div>参与开发全局公用组件5个</div>
+<div>
+组件库：<img src="ultra.png" style="width: 160px; height: 24px;" />
+例：<img src="ultraexample.png" />
+</div>
+</template>
+</Card>
 </div>
 </template>
 </Page>
@@ -159,9 +202,30 @@ image: 'huawen.jpg'
 ---
 <Page title="关于函数化">
 <template #default>
-<div class="slot">
-<h3>抽象模块方法40个</h3>
-<h3>参与开发全局方法6个</h3>
+<div class="slot cflex">
+<Card v-click="1" title="模块公用方法">
+<template #default>
+<div>抽象模块级公用方法40个</div>
+<div>
+<span>例：</span>
+<Tag text="useDicts" />
+<Tag text="useMarkMap" />
+<Tag text="useQuotaSearcher" />
+<Tag text="useApplicant" />
+<Tag text="Crouter" />
+<span>...</span>
+</div>
+</template>
+</Card>
+<Card v-click="2" title="全局公用方法">
+<template #default>
+<div>参与开发全局公用方法6个</div>
+<div>
+工具库：<img src="catkit.png" style="width: 80px; height: 30px;" />
+例：<img src="catexample.png" />
+</div>
+</template>
+</Card>
 </div>
 </template>
 </Page>
@@ -172,9 +236,16 @@ image: 'huawen.jpg'
 <Page title="一点问题及建议">
 <template #default>
 <div class="slot">
-稳定、明确的需求对代码的整体质量有明显重要的影响，建议开发过程流程化，以原型为核心和驱动，原型-设计-开发-测试-产品
-降低沟通成本，减少需求扯皮的情况
-对设计，可以整体把控产品的样式和美观，对开发有明显的清晰的需求参照，对测试有清晰的测试参照
+<div style="text-indent: 2em; text-decoration: underline">
+从以上的过程可以看出来，
+稳定、明确的需求对代码的整体质量有明显重要的影响，
+建议开发过程流程化，以原型为核心和驱动，
+需求的变更从原型开始，到设计到开发到测试，
+降低沟通成本，减少需求扯皮的情况，
+对设计，可以整体把控产品的样式和美观
+对开发，有明显清晰的开发需求
+对测试，有清晰的测试参照
+</div>
 </div>
 </template>
 </Page>
