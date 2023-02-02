@@ -70,15 +70,13 @@ image: 'bg.jpg'
 ---
 <PageThree title="主要涉及表单" />
 ---
-transition: slide-up
 ---
-# 代码提交次数
-期间: 2022/01/01 - 2022/12/31
-|         |          |
+## 代码提交次数
+
+| 期间: 2022/01/01 - 2022/12/31 |  |
 | ------- |--------- |
 | 1.3版本 | 277次 |
 | 1.5版本 | 1369次 |
-
 <div v-click="1">
 
 <br />
@@ -232,11 +230,12 @@ image: 'huawen.jpg'
 ---
 layout: image
 image: 'huawen.jpg'
+transition: slide-up
 ---
 <Page title="一点问题及建议">
 <template #default>
 <div class="slot">
-<div style="text-indent: 2em; text-decoration: underline">
+<div style="text-indent: 2em; text-decoration: underline" v-click="1">
 从以上的过程可以看出来，
 稳定、明确的需求对代码的整体质量有明显重要的影响，
 建议开发过程流程化，以原型为核心和驱动，
