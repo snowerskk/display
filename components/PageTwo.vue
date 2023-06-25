@@ -1,57 +1,19 @@
 <template>
-  <div class="page">
-    <Title :title="props.title" />
-    <div class="content">
-      <div class="block">
-        <ol class="list" v-click="1">
-          <li class="item" v-for="(item, index) of modules">
-            <span class="dot">{{ index + 1 }}</span>
-            <span>{{ item }}</span>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
+  <BasePage title="1.3版本" :left="left" :right="right" />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import Title from './Title.vue'
+import BasePage from './BasePage.vue'
 
-const props = defineProps({
-  title: String
-})
+const left = [
+  '指标增加金额等筛选条件',
+  '部门换接口',
+  '银行信息和支付明细增加财政所号',
+  '增加bak文件导出',
+  '差旅报销公杂费计算天数调整',
+  '增加自定义确认弹框',
+  '差旅报销补助，天数增加可编辑控件，金额随天数变动'
+]
 
-const modules = ref(['指标管理', '报销管理', '借款管理', '项目库', '项目评审', '支付管理'])
+const right = ['优化申请单支付明细提交校验', '修复金额精度问题', '修复指标选择bug', '发票金额类型bug']
 </script>
-
-<style scoped>
-.page {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-}
-.content {
-  color: #000;
-}
-.block {
-  background: #fff;
-}
-.list {
-  list-style: none;
-}
-.item {
-  border-bottom: 1px solid rgb(82, 89, 195);
-}
-.dot {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  background: rgb(145, 151, 244);
-  border-radius: 5px;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: 10px;
-  color: #fff;
-}
-</style>

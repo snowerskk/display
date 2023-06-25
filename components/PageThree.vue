@@ -1,82 +1,19 @@
 <template>
-  <div class="page">
-    <Title :title="props.title" />
-    <div class="content">
-      <div class="block">
-        <ul class="list" v-click="1">
-          <li class="item" v-for="item in modules">{{ item }}</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <BasePage title="1.5版本" :left="left" :right="right" />
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import Title from './Title.vue'
+import BasePage from './BasePage.vue'
 
-const props = defineProps({
-  title: String
-})
+const left = [
+  '根据所选部门筛选出部门下的指标和申请',
+  '部门前增加单位字段',
+  '公务接待报销增加人员明细导入',
+  '项目库项目申报增加权限分配',
+  '项目字典增加权限分配及查看详情功能',
+  '保证金报销分页加字段加查询条件',
+  '指标模块调整接口、增加字段'
+]
 
-const modules = ref([
-  '一级指标编制',
-  '二级指标编制',
-  '指标调整单',
-  '指标调剂单',
-  '指标冻结',
-  '指标解冻',
-  '通用报销',
-  '公务接待报销',
-  '会议报销',
-  '培训报销',
-  '差旅报销',
-  '合同报销',
-  '公务用车报销',
-  '保证金报销',
-  '借款单',
-  '还款单',
-  '项目申报',
-  '项目储备',
-  '项目结项',
-  '项目申报',
-  '项目总览',
-  '参评单位',
-  '协审单位抽签',
-  '审核报告',
-  '统计',
-  '费用结算',
-  '支付申请单',
-  '支付进度登记簿'
-])
+const right = ['调整报销校验逻辑', '调整指标模块提交逻辑', '修复导入组件预览表格赋值bug']
 </script>
-
-<style scoped>
-.page {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  padding: 10px;
-}
-.content {
-  color: #000;
-}
-.block {
-  background: #fff;
-}
-.list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-.item {
-  flex-grow: 1;
-  width: 20%;
-  border: 1px solid rgb(177, 181, 247);
-  background: rgb(239, 240, 253);
-  border-radius: 5px;
-  margin-bottom: 10px;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 600;
-}
-</style>

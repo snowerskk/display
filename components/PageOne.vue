@@ -3,8 +3,7 @@
     <Title :title="props.title" />
     <div class="content">
       <div class="block">
-        <h3 v-click="1" style="margin-bottom: 20px">主要项目及版本</h3>
-        <ol class="list" v-click="2">
+        <ol class="list" v-click="1">
           <li class="item" v-for="item in projects">💠{{ item }}</li>
         </ol>
       </div>
@@ -20,7 +19,7 @@ const props = defineProps({
   title: String
 })
 
-const projects = ref(['1.3娄葑', '1.5低代码', '东台自规局项目', '东海县投资评审'])
+const projects = ref(['1.3版本', '1.5版本', '东海县投资评审', '国库项目pc端', '国库项目移动端', '浙江公路水运项目', '配置表单'])
 </script>
 
 <style scoped>
@@ -36,6 +35,7 @@ const projects = ref(['1.3娄葑', '1.5低代码', '东台自规局项目', '东
 }
 .list {
   list-style: none;
+  padding-bottom: 20px;
 }
 .item {
   border-bottom: 1px solid #eee;
