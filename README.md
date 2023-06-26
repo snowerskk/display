@@ -2,9 +2,7 @@
 
 To start the slide show:
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+- visit https://snowerskk.github.io/display/1
 
 Edit the [slides.md](./slides.md) to see the changes.
 
