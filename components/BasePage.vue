@@ -3,14 +3,14 @@
     <Title :title="props.title" />
     <div class="content">
       <div class="block">
-        <Card :title="leftTitle" v-click="1" v-if="left.length">
-          <ol>
-            <li v-for="row of left">{{ row }}</li>
+        <Card :title="leftTitle" v-click="1" v-if="left.length" class="card">
+          <ol class="list">
+            <li v-for="row of left" class="item">{{ row }}</li>
           </ol>
         </Card>
-        <Card :title="rightTitle" v-click="2" v-if="right.length">
-          <ol>
-            <li v-for="row of right">{{ row }}</li>
+        <Card :title="rightTitle" v-click="2" v-if="right.length" class="card">
+          <ol class="list">
+            <li v-for="row of right" class="item">{{ row }}</li>
           </ol>
         </Card>
       </div>
@@ -58,8 +58,14 @@ const props = defineProps({
   background: #fff;
   display: flex;
 }
+.card {
+  flex: 1;
+}
 .list {
-  list-style: none;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .item {
   border-bottom: 1px solid #eee;

@@ -42,7 +42,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 layout: image
 image: 'bg2.jpg'
 ---
-<PageOne title="2023上半年工作总结" />
+<PageOne />
 <!--
 You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/guide/syntax#embedded-styles
@@ -81,21 +81,19 @@ image: 'bg.jpg'
 <PageFive />
 ---
 layout: image
+image: 'bg.jpg'
+---
+<PageSix />
+---
+layout: image
 image: 'huawen.jpg'
 transition: slide-up
 ---
-<Page title="一点问题及建议">
+<Page title="存在的问题">
 <template #default>
 <div class="slot">
 <div style="text-indent: 2em; text-decoration: underline" v-click="1">
-从以上的过程可以看出来，
-稳定、明确的需求对代码的整体质量有明显重要的影响，
-建议开发过程流程化，以原型为核心和驱动，
-需求的变更从原型开始，到设计到开发到测试，
-降低沟通成本，减少需求扯皮的情况，
-对设计，可以整体把控产品的样式和美观
-对开发，有明显清晰的开发需求
-对测试，有清晰的测试参照
+由于将一部分代码转移到了业务中台，所以配置表单占了较大的工作量，另外由于同时存在多个不同的项目和多个不同的服务器环境，出现了代码与表单配置与服务器环境的多对多对多的情况，大大增加了开发难度，同时大大降低了开发效率。
 </div>
 </div>
 </template>

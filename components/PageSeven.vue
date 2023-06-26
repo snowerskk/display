@@ -1,11 +1,9 @@
 <template>
   <div class="page">
-    <Title title="2023上半年工作总结" />
+    <Title title="配置表单" />
     <div class="content">
       <div class="block">
-        <ol class="list" v-click="1">
-          <li class="item" v-for="item in projects">💠{{ item }}</li>
-        </ol>
+        由于将一部分逻辑转移到了业务中台，所以配置表单占了一部分的工作量
       </div>
     </div>
   </div>
@@ -28,12 +26,5 @@ const projects = ref(['1.3版本', '1.5版本', '东海县投资评审', '国库
 }
 .block {
   background: #fff;
-}
-.list {
-  list-style: none;
-  padding-bottom: 20px;
-}
-.item {
-  border-bottom: 1px solid #eee;
 }
 </style>

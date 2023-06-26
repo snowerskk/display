@@ -16,5 +16,6 @@ const props = defineProps({
   line-height: 2.5rem;
   text-align: center;
   color: #2F4F4F;
+  padding-top: 10px;
 }
 </style>
