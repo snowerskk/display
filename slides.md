@@ -73,6 +73,11 @@ image: 'bg.jpg'
 layout: image
 image: 'bg.jpg'
 ---
+<PageEight />
+---
+layout: image
+image: 'bg.jpg'
+---
 <PageFour />
 ---
 layout: image
@@ -93,7 +98,7 @@ transition: slide-up
 <template #default>
 <div class="slot">
 <div style="text-indent: 2em; text-decoration: underline" v-click="1">
-由于将一部分代码转移到了业务中台，所以配置表单占了较大的工作量，另外由于同时存在多个不同的项目和多个不同的服务器环境，出现了代码与表单配置与服务器环境的多对多对多的情况，大大增加了开发难度，同时大大降低了开发效率。
+由于将一部分代码逻辑转移到了业务中台，所以配置表单占了较大的工作量，另外由于同时存在多个不同的项目和多个不同的服务器环境，出现了代码与表单配置与服务器环境的多对多对多的情况，在不同的项目不同的环境中来回切换，极大增加了开发难度，同时大大降低了开发效率。
 </div>
 </div>
 </template>
