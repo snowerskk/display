@@ -15,7 +15,7 @@
 import { ref } from 'vue'
 import Title from './Title.vue'
 
-const projects = ref(['1.3版本', '1.5版本', '东海县投资评审', '国库项目pc端', '国库项目移动端', '浙江公路水运项目'])
+const projects = ref(['1.3版本', '1.5版本', '东海县投资评审', '国库项目pc端', '国库项目移动端', '浙江交科院项目'])
 </script>
 
 <style scoped>

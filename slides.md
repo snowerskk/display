@@ -97,9 +97,12 @@ transition: slide-up
 <Page title="存在的问题">
 <template #default>
 <div class="slot">
-<div style="text-indent: 2em; text-decoration: underline" v-click="1">
-由于将一部分代码逻辑转移到了业务中台，所以配置表单占了较大的工作量，另外由于同时存在多个不同的项目和多个不同的服务器环境，出现了代码与表单配置与服务器环境的多对多对多的情况，在不同的项目不同的环境中来回切换，极大增加了开发难度，同时大大降低了开发效率。
+<div style="text-indent: 2em;" v-click="1">
+由于将一部分代码逻辑转移到了业务中台，同时由于存在多个不同的项目和多个不同的服务器环境，出现了代码与表单配置、代码与服务器环境、表单配置与服务器环境三者之间相互多对多的情况，由此产生的问题：
 </div>
+<Item v-click="2" text="1.配置表单占了较大的工作量，测试提的bug有相当一部分是配置问题" />
+<Item v-click="3" text="2.同时在多个项目与环境之间来回切换，极大增加了开发难度" />
+<Item v-click="4" text="3.降低了开发效率，增加了出bug的可能" />
 </div>
 </template>
 </Page>
